@@ -79,7 +79,7 @@ resume-checker/
 ## 1 · Run locally (Python venv on Windows / macOS / Linux)
 
 ```powershell
-cd C:\Users\N937262\Downloads\AICHAT\resume-checker
+cd \resume-checker
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -107,7 +107,7 @@ ruff check .
 ## 2 · Run with Docker
 
 ```powershell
-cd C:\Users\N937262\Downloads\AICHAT\resume-checker
+cd \resume-checker
 docker compose up --build -d
 # -> http://127.0.0.1:5050   (compose maps 5000 -> 5050)
 
