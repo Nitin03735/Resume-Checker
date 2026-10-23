@@ -1,0 +1,53 @@
+# ============================================================
+# THIS PROJECT IS LOCAL-ONLY.
+# Do NOT run `git init` here. Do NOT add a remote.
+# Do NOT push to GitHub, GitLab, Bitbucket, or any public host.
+# Keep inside the parent AICHAT folder only.
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Uploaded resumes (sensitive personal data — never commit)
+samples/*.pdf
+samples/*.docx
+uploads/
+tmp/
+
+# Local secrets / env
+.env
+.env.*
+!.env.example
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker local state
+.docker-data/
+
+# Logs
+*.log
+
+# Local deploy state (never commit secret override files)
+deploy/*.env
+deploy/*.override.conf
+etc-default.resume-checker

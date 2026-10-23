@@ -1,0 +1,14 @@
+services:
+  resume-checker:
+    build: .
+    image: resume-checker:local
+    container_name: resume-checker
+    ports:
+      - "5050:5000"
+    environment:
+      - FLASK_ENV=production
+      - MAX_UPLOAD_MB=5
+    volumes:
+      # Mount samples read-only so you can drop PDFs in and test
+      - ./samples:/app/samples:ro
+    restart: unless-stopped
